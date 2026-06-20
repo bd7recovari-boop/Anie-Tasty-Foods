@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anie Tasty Foods</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" /> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="images">
+            <img id="images" src="logo.jpeg" alt="logo">
+        </div>
+
+
+
+
+        </div>
+        <div class="nav a">
+            <nav>
+                <a class="navlinks">
+                    <div class="icons">
+                        <a href="#Home"><i class="fa-solid fa-house"></i>Home</a>
+                        <a href="#About"><i class="fa-solid fa-circle-user"></i>About</a>
+                        <a href="#Reserve"><i class="fa-solid fa-calendar-check"></i> Reserve</a>
+                        <a href="#Contact"><i class="fa-solid fa-phone"></i>Contact</a>
+                    </div>
+                </a>
+            </nav>
+        </div>
+        <div class="box">
+            <button>Sign up</button>
+        </div>
+    </header>
+
+    <div id="Home">
+    <div class="space">
+     <div class="menu">
+        <a href="menu.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="hero-content">
+            <h3 id="gradient-text">Savor The Taste, Share The Joy.</h3>
+            <p id="note">Enjoy how we redefined your favorite dishes with our seamless ordering system.
+            Experience the convenience of having delicious meals delivered right to your doorstep.
+            Discover the perfect blend of taste and convenience with us, where every bite is a celebration of flavor and every order is a step towards culinary delight.
+            <br>Eat smart, Eat delicius, Enjoy more.
+        </p>
+        </div>
+        <div class="stats">
+            <span class="stat-item"><i class="fa-solid fa-users"></i> 1000+ users</span>
+            <span class="stat-item"><i class="fa-solid fa-star"></i> 4.8 star rated</span>
+        </div>
+    </div>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+
+    <div class="container">
+
+        <!-- BOOK A TABLE -->
+        <div class="sit">
+            <!-- <div class="sit"> -->
+            <div class="gut">
+                <h1>BOOK A TABLE</h1>
+                <p><i>You can as well book a table for family hangout, dates, friends hangout, etc. there are much more
+                        affordable.</i></p>
+                <div class="pics">
+                    <img src="reserved.jfif">
+                </div>
+                <button id="but">BOOK A TABLE</button>
+
+            </div>
+        </div>
+        <div class="line">
+            <hr>
+        </div>
+        <!-- <a class="#contact"></a> -->
+        <!-- DELICIOUS FOOD -->
+        <!-- <div class="h4"> -->
+        <h4 id="About">About Us</h3>
+            <!-- </div> -->
+            <p><i id="cop">Introducing Anie Tasty Foods, your taste, delivered. We work hard so as to serve our customers to our best, providing delicious foods of any kind
+                    to
+                    the happiness of our customers</i></p>
+
+            <div class="grid-3">
+                <!-- <img src="pizza.jfif" alt="Pizza"> -->
+                <!-- <img src="download.jfif" alt="burger"> -->
+                <!-- <img src="salad.jfif" alt="salad"> -->
+            </div>
+
+            <!-- <div class="line"> -->
+            <!-- <hr> -->
+            <!-- </div> -->
+
+            <div class="cards">
+                <div class="commentcard">
+                    <div class="boxf" id="box1">
+                        <div class="tyt">
+                            <img id="face1" src="attract.jpg">
+                        </div>
+                        <div class="tyt">
+                            <i>My name is Emmanuel, I recommend this to anybody.</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commentcard">
+                    <div class="boxf" id="box1">
+                        <img id="face" src="menz.jpg">
+                        <div class="tyt">
+                            <i>My name is , I recommend this to anybody.</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commentcard">
+                    <div class="boxf" id="box1">
+                        <img id="face" src="haired.jpg">
+                        <div class="tyt">
+                            <i>My name is Ubong, I recommend this to anybody.</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <i class="fa-solid fa-comment"></i>
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+            <!-- <span></span> -->
+
+            <!-- RESERVATION FORM -->
+           <div id="Reserve">
+            <h2 style="margin-top: 60px;">MAKE A RESERVATION</h2>
+
+            <div class="grid-2">
+                <div class="form-card">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="date">
+                    <div class="button">
+                        <button>RESERVE</button>
+                    </div>
+
+                </div>
+
+                <!-- <div class="reserve"> -->
+                    <!-- <img src="reserved.jfif" alt="Reserved table"> -->
+                </div>
+            </div>
+
+    </div>
+    </div>
+</div>
+
+    <div id="Contact"> 
+        <p>Phone: +234 803 123 4567 | Email: anietastyfoods@gmail.com</p>
+       <p>Location: 123 Food Street, Flavor Town, Nigeria</p>
+        
+       <footer>
+            <p>&copy; 2024 Anie Tasty Foods. All rights reserved.</p>
+        </footer>
+    </div>
+
+     <script>
+        const menuIcon = document.getElementById('menuIcon');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        menuIcon.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!menuIcon.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('active');
+            }
+        });
+    </script> 
+
+</html>
