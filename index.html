@@ -7,43 +7,36 @@
     <title>Anie Tasty Foods</title>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" /> -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+    <link href="Anie.javascript">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <div class="images">
-            <img id="images" src="logo.jpeg" alt="logo">
+        <div class="header-left">
+            <div class="images">
+                <img id="images" src="logo.jpeg" alt="logo">
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
 
+        <nav class="nav-links" id="mainNav">
+            <a href="#Home"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#About"><i class="fa-solid fa-circle-user"></i>About</a>
+            <a href="#Reserve"><i class="fa-solid fa-calendar-check"></i>Reserve</a>
+            <a href="#Contact"><i class="fa-solid fa-phone"></i>Contact</a>
+        </nav>
 
-
-
-        </div>
-        <div class="nav a">
-            <nav>
-                <a class="navlinks">
-                    <div class="icons">
-                        <a href="#Home"><i class="fa-solid fa-house"></i>Home</a>
-                        <a href="#About"><i class="fa-solid fa-circle-user"></i>About</a>
-                        <a href="#Reserve"><i class="fa-solid fa-calendar-check"></i> Reserve</a>
-                        <a href="#Contact"><i class="fa-solid fa-phone"></i>Contact</a>
-                    </div>
-                </a>
-            </nav>
-        </div>
         <div class="box">
-            <button>Sign up</button>
+            <a class="header-action" href="signup.html">Sign up</a>
         </div>
     </header>
 
     <div id="Home">
     <div class="space">
-     <div class="menu">
-        <a href="menu.html"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
         <div class="hero-content">
             <h3 id="gradient-text">Savor The Taste, Share The Joy.</h3>
             <p id="note">Enjoy how we redefined your favorite dishes with our seamless ordering system.
@@ -56,6 +49,14 @@
             <span class="stat-item"><i class="fa-solid fa-users"></i> 1000+ users</span>
             <span class="stat-item"><i class="fa-solid fa-star"></i> 4.8 star rated</span>
         </div>
+     <div class="menu">
+        <a href="menu.html">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span style="font-size: 18px; font-weight: 600;">Order Here</span>
+            </div>
+        </a>
+        </div>
     </div>
     </div>
     <div class="line">
@@ -66,16 +67,14 @@
 
         <!-- BOOK A TABLE -->
         <div class="sit">
-            <!-- <div class="sit"> -->
             <div class="gut">
                 <h1>BOOK A TABLE</h1>
                 <p><i>You can as well book a table for family hangout, dates, friends hangout, etc. there are much more
                         affordable.</i></p>
-                <div class="pics">
-                    <img src="reserved.jfif">
-                </div>
                 <button id="but">BOOK A TABLE</button>
-
+            </div>
+            <div class="pics">
+                <img src="reserved.jfif" alt="A reserved restaurant table">
             </div>
         </div>
         <div class="line">
@@ -84,7 +83,7 @@
         <!-- <a class="#contact"></a> -->
         <!-- DELICIOUS FOOD -->
         <!-- <div class="h4"> -->
-        <h4 id="About">About Us</h3>
+<h4 id="About">About Us</h4>
             <!-- </div> -->
             <p><i id="cop">Introducing Anie Tasty Foods, your taste, delivered. We work hard so as to serve our customers to our best, providing delicious foods of any kind
                     to
@@ -104,28 +103,28 @@
                 <div class="commentcard">
                     <div class="boxf" id="box1">
                         <div class="tyt">
-                            <img id="face1" src="attract.jpg">
+                            <img id="face1" src="attract.jpg" alt="Mary" loading="lazy" decoding="async">
                         </div>
                         <div class="tyt">
-                            <i>My name is Emmanuel, I recommend this to anybody.</i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="commentcard">
-                    <div class="boxf" id="box1">
-                        <img id="face" src="menz.jpg">
-                        <div class="tyt">
-                            <i>My name is , I recommend this to anybody.</i>
+                            <i>My name is Mary, Anie Tasty Foods are so stress-free and fast, I ordered my favorite food and it was delivered on time and in good condition.</i>
                         </div>
                     </div>
                 </div>
 
                 <div class="commentcard">
                     <div class="boxf" id="box1">
-                        <img id="face" src="haired.jpg">
+                        <img id="face" src="menz.jpg" alt="Maxwell Scott" loading="lazy" decoding="async">
                         <div class="tyt">
-                            <i>My name is Ubong, I recommend this to anybody.</i>
+                            <i>I'm  Maxwell Scott, Anie Tasty Foods have one of the nicest and most delicious meals, I really enjoy their active artwork in their meals.</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commentcard">
+                    <div class="boxf" id="box1">
+                        <img id="face" src="haired.jpg" alt="Joana Bush" loading="lazy" decoding="async">
+                        <div class="tyt">
+                            <i>My name is Joana Bush, I love the variety of dishes and the friendly service, it's always a great experience, and the prices are just moderate and not expensive at all.</i>
                         </div>
                     </div>
                 </div>
@@ -141,28 +140,21 @@
             <!-- <span></span> -->
 
             <!-- RESERVATION FORM -->
-           <div id="Reserve">
-            <h2 style="margin-top: 60px;">MAKE A RESERVATION</h2>
+            <div id="Reserve">
+                <h2 style="margin-top: 60px;">MAKE A RESERVATION</h2>
 
-            <div class="grid-2">
-                <div class="form-card">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="date">
-                    <div class="button">
-                        <button>RESERVE</button>
+                <div class="grid-2">
+                    <div class="form-card">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="date">
+                        <div class="button">
+                            <button type="button">RESERVE</button>
+                        </div>
                     </div>
-
-                </div>
-
-                <!-- <div class="reserve"> -->
-                    <!-- <img src="reserved.jfif" alt="Reserved table"> -->
                 </div>
             </div>
-
-    </div>
-    </div>
-</div>
+        </div>
 
     <div id="Contact"> 
         <p>Phone: +234 803 123 4567 | Email: anietastyfoods@gmail.com</p>
@@ -173,21 +165,19 @@
         </footer>
     </div>
 
-     <script>
-        const menuIcon = document.getElementById('menuIcon');
-        const dropdownMenu = document.getElementById('dropdownMenu');
+     <!-- <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
 
-        menuIcon.addEventListener('click', function(e) {
-            e.preventDefault();
-            dropdownMenu.classList.toggle('active');
+        menuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
         });
 
-        // Close dropdown when clicking outside
         document.addEventListener('click', function(e) {
-            if (!menuIcon.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                dropdownMenu.classList.remove('active');
+            if (!menuToggle.contains(e.target) && !mainNav.contains(e.target)) {
+                mainNav.classList.remove('active');
             }
         });
-    </script> 
+    </script> -->
 
 </html>
